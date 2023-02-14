@@ -11,11 +11,11 @@ const suma = () => {
     return 2 + 3;
 };
 
-function FirstApp() {
+function FirstApp({titulo, valor}) {
 
     return (
         <>
-            <h1>FirstApp {titulo}</h1>
+            <h1>first App, {titulo} con valor de {valor}</h1>
             <p>Este es un párrafo.</p>
             <p>{arreglo}</p>
             <code>{JSON.stringify(objeto)}</code>
