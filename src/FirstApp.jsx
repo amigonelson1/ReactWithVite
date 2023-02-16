@@ -17,7 +17,11 @@ function FirstApp({ titulo, valor }) {
 
     return (
         <>
-            <h1>first App, {titulo} con valor de {valor}</h1>
+            <h1>{titulo}</h1>
+            <div data-testid="test-titulo">{titulo}</div>
+            <p>{valor}</p>
+            <p>{valor}</p>
+            <p>{valor}</p>
             <p>Este es un párrafo.</p>
             <p>{arreglo}</p>
             <code>{JSON.stringify(objeto)}</code>
@@ -40,4 +44,10 @@ FirstApp.defaultProps = {
     nombre: 'soy el nombre por defecto',
 }
 
-export default FirstApp
+export default FirstApp;
+
+/*Para hacer pruebas a componentes en vite y en conjunto con jest instalamos:
+'yarn add --dev @testing-library/react';
+'yarn add -D jest-environment-jsdom';
+'yarn add -D @babel/preset-react';
+*/
