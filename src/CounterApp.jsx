@@ -30,7 +30,7 @@ function CounterApp({ value }) {
             <h1>CounterApp</h1>
             <h2>{counter}</h2>
             <button onClick={handledAdd}>+1</button>
-            <button onClick={handledsubstract}>-1</button>
+            <button aria-label='reset-btn' onClick={handledsubstract}>-1</button>
             <button onClick={handledReset}>Reset</button>
         </>
     )
